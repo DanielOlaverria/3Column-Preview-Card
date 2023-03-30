@@ -1,0 +1,129 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial, sans-serif, 'Franklin Gothic Medium';
+}
+
+body{
+    background-color: aliceblue;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.sedans{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(218, 142, 2);
+    font-size: 12px;
+    padding: 0 22px;
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(2, 125, 129);
+    font-size: 12px;
+    padding: 0 22px;
+}
+
+.luxury{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(1, 78, 65);
+    font-size: 12px;
+    padding: 0 22px;
+    border-radius: 0 0 10px 10px;
+}
+
+section img{
+    margin: 16px 0 16px 0;
+    width: 35px;
+}
+
+section h1{
+    margin: 0 0 16px 0;
+}
+
+section p{
+    line-height: 1.5;
+}
+
+button{
+    width: 100px;
+    padding: 10px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 18px 0 28px 0;
+    border: none;
+}
+
+.botonSedans{
+    color: rgb(218, 142, 2);
+    font-weight: 800;
+}
+
+.botonSuvs{
+    color: rgb(2, 125, 129);
+    font-weight: 800;
+}
+
+.botonLuxury{
+    color: rgb(1, 78, 65);
+    font-weight: 800;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 769px){
+    main{
+        width: 70%;
+        flex-direction: row;
+        margin: 150px auto 0;
+        font-size: 2rem;
+    }
+
+    .sedans{
+        border-radius: 10px 0 0 10px;
+        font-size: 0.7rem;
+        height: 46vh;
+    }
+
+    .suvs{
+        font-size: 0.7rem;
+        height: 46vh;
+    }
+
+    .luxury{
+        border-radius: 0 10px 10px 0;
+        font-size: 0.7rem;
+        height: 46vh;
+    }
+
+    button{
+        margin: 48px 0 28px 0;
+    }
+
+    button:hover{
+        background-color: rgba(192, 202, 202, 0);
+        color: #fff;
+        border: 1.5px solid #fff;
+        cursor: pointer;
+    }
+}
